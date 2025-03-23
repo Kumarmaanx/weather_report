@@ -18,3 +18,12 @@ Provide forecasts over both short-term (daily) and long-term (weekly/monthly) in
 ### 5.Visualization and Reporting
 Provide clear visualizations of historical data, trends, and forecasted results for ease of interpretation.
 Generate automated reports of daily Weather Conditions And Air Quality.
+## NON - FUNCTIONAL REQUIREMENTS
+### 1.Performance Requirement:
+The system should process and train models efficiently using LSTM with bidirectional layers for sequential data analysis. Predictions should be generated within a few seconds to minutes after training, ensuring quick response times. The training phase should support batch processing with an optimal batch size (e.g., 32) for efficient model training.
+### 2.Scalability:
+The system should support large datasets with multiple weather and air quality parameters. It should be capable of handling increasing data volumes over time without significant degradation in performance.
+### 3.Maintainability:
+The system should be modular, with each function handling specific tasks such as preprocessing, training, and evaluation. It should allow easy modification of forecasting parameters like lookback_days and forecast_days.
+
+
