@@ -2,4 +2,19 @@
 Air pollution is like that unwelcome guest who overstays their welcome, making breathing a hassle, causing lung issues, and even messing with your heart. And it doesn’t help that weather conditions, like wind, temperature, and humidity, play a game of tag with pollutants, spreading them around or trapping them in one place like an unwanted fog. Traditional methods of predicting pollution are about as reliable as guessing the weather by looking out the window—way too many factors and way too much uncertainty. But fear not, deep learning is here to save the day! This high-tech superhero can sift through mountains of data, uncover hidden patterns, and make air pollution predictions much more accurate. Enter Bi-Directional Long Short Term Memory (Bi-LSTM), a fancy AI model that looks at pollution data from both the past and future—kind of like a time traveler that helps cities jump into action before pollution becomes a problem. With better forecasting, authorities can give us early warnings, limit traffic, or even suggest working from home, keeping us safe from those toxic air surprises. Cities like Los Angeles and Shanghai are already using AI to tackle pollution, and the future is looking cleaner and healthier. So, thanks to deep learning, we might just be able to kick pollution to the curb and breathe a little easier—literally!
 ## PROBLEM STATEMENT & ABOUT
 Air pollution is a major threat to public health, and the weather plays a big part in how pollutants spread, with factors like temperature, humidity, and wind speed shaping air quality. The problem is, traditional forecasting models often struggle to predict these interactions accurately, which means we miss the chance to take timely action. But here’s where deep learning comes to the rescue! This project taps into the power of Bi-Directional Long Short Term Memory (Bi-LSTM) to better understand the link between weather patterns and air pollution. By processing data both forwards and backwards, Bi-LSTM boosts prediction accuracy, giving us the tools for early warnings, traffic control, and smarter policy decisions. With this approach, we can reduce health risks, make more informed environmental choices, and pave the way for more sustainable cities. It’s a win for both our health and the planet!
+## FUNCTIONAL REQUIREMENTS
+### Functional Requirements
+### 1.Data Collection
+Gather historical weather and pollution data from use sources like Central Pollution Control Board to ensure comprehensive and accurate data.
+### 2.Data Preprocessing
+Clean and preprocess data to handle missing values, normalize data ranges, and structure it in a time-series format suitable for deep learning.
+Apply noise reduction techniques to filter out irrelevant data.
+### 3.Model Development and Training
+Develop a Recurrent Neural Network (RNN) with Bi-Directional (LSTM) layers, including Confusing Matrix for predicting weather and pollution patterns .
+Train the model using labeled datasets and optimize performance with Adam Optimizer.
+### 4.Time-Series Forecasting
+Provide forecasts over both short-term (daily) and long-term (weekly/monthly) intervals.
 
+### 5.Visualization and Reporting
+Provide clear visualizations of historical data, trends, and forecasted results for ease of interpretation.
+Generate automated reports of daily Weather Conditions And Air Quality.
