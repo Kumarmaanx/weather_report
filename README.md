@@ -25,5 +25,23 @@ The system should process and train models efficiently using LSTM with bidirecti
 The system should support large datasets with multiple weather and air quality parameters. It should be capable of handling increasing data volumes over time without significant degradation in performance.
 ### 3.Maintainability:
 The system should be modular, with each function handling specific tasks such as preprocessing, training, and evaluation. It should allow easy modification of forecasting parameters like lookback_days and forecast_days.
+## PROPOSED METHODOLOGIES
+Data Preprocessing:
+Load and rename dataset columns.
+Fill missing values with the mean.
+Normalization using Min-Max scaling.
+### 2.Sequence Creation:
+Generate input-output sequences with a window size of 12 to predict the next value (one day ahead).
+### 3. Data Splitting:
+Split the dataset into training (70%) and testing (30%) sets for model evaluation.
+### 4.Model Definition:
+Build a Bidirectional LSTM model with two LSTM layers and a Dense output layer. Compile the model using the Adam optimizer and Mean Squared Error (MSE) loss function.
+### 5.Model Training:
+Train the model on the training set and validate on the testing set, plotting the loss curve.
+### 6.Predictions:
+Make predictions on the test set and inverse transform the results to the original scale. Generate a confusion matrix to evaluate classification performance.
+### 7.Future Predictions:
+Train the model on the entire dataset and predict the next 30 days, saving results to CSV files for further analysis.
+
 
 
